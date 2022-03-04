@@ -1,10 +1,9 @@
-.App {
-  text-align: center;
+.body {
+  font-family: "Roboto", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  text-decoration: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -35,4 +34,153 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  width: 100%;
+  padding: 30px;
+  position: fixed;
+  display: flex;
+  background-color: white;
+  top: 0px;
+  z-index: 1;
+}
+
+.nav-item {
+  font-weight: 700;
+  font-size: 16px;
+  padding-top: 9px;
+}
+
+a.active {
+  color: red !important;
+}
+
+a.normal {
+  color: #919191;
+}
+
+.tagline {
+  position: relative;
+  top: 400px;
+  color: white;
+  text-align: center;
+}
+
+.tag {
+  font-weight: 500;
+  text-shadow: 2px 2px #413c3c;
+}
+
+.baker {
+  font-size: 60px;
+  text-align: center;
+  color: white;
+  margin-bottom: 5px;
+  text-shadow: 2px 2px #413c3c;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("../public/images/real1.jpg");
+
+  /* Set a specific height */
+  min-height: 100vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section1 {
+  background-color: #dde3ec;
+  padding: 50px;
+  text-align: center;
+  color: black;
+  line-height: 2em;
+  margin-top: 50px;
+}
+
+.section1-header {
+  margin: 0px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.section3-header {
+  margin: 0px;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.section2 {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.section3 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: beige;
+  margin-bottom: 50px;
+}
+
+.section3-inner {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 300px;
+  height: 200px;
+  background-color: blue;
+}
+
+.box1 {
+  width: 400px;
+  height: 400px;
+  background-color: #61dafb;
+  margin-bottom: 30px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+  background-color: #282c34;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.footer-item {
+  padding: 10px;
+}
+
+.wallet {
+  padding: 5px;
+  display: block;
+  margin-right: 100px;
+  border: none;
+  background-color: #0b3e4d;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: "Roboto", sans-serif;
+  color: white;
 }
