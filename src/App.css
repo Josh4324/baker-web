@@ -39,7 +39,7 @@ a {
 .header-inner {
   display: flex;
   justify-content: space-between;
-  width: 60%;
+  width: 55%;
   margin-left: auto;
   margin-right: auto;
   font-family: "Roboto", sans-serif;
@@ -47,22 +47,22 @@ a {
 
 .header {
   width: 100%;
-  padding: 30px;
+  padding: 10px;
   position: fixed;
   display: flex;
   background-color: white;
   top: 0px;
-  z-index: 1;
+  z-index: 10;
 }
 
 .nav-item {
   font-weight: 700;
   font-size: 16px;
-  padding-top: 9px;
+  padding-top: 16px;
 }
 
 a.active {
-  color: red !important;
+  color: orange !important;
 }
 
 a.normal {
@@ -135,7 +135,7 @@ a.normal {
 .section3 {
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: beige;
+  background-color: orange;
   margin-bottom: 50px;
 }
 
@@ -174,13 +174,58 @@ a.normal {
 }
 
 .wallet {
-  padding: 5px;
   display: block;
   margin-right: 100px;
+  margin-top: 10px;
+  height: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
   border: none;
-  background-color: #0b3e4d;
-  padding: 10px;
+  background-color: orange;
   border-radius: 10px;
   font-family: "Roboto", sans-serif;
   color: white;
+}
+
+.ham {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .animation1 {
+    transform: translateY(30px);
+    transition: transform 1.5s;
+  }
+  .header-inner {
+    display: block;
+    position: absolute;
+    z-index: 0;
+    top: 100px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+
+  .ham {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-top: 19px;
+  }
+
+  .header {
+    justify-content: space-between;
+  }
+
+  .wallet {
+    margin-right: 10px;
+  }
+  .animation2 {
+    transform: translateY(-400px);
+    transition: transform 1.5s;
+  }
 }

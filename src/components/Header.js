@@ -1,13 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 
 export default function Header() {
+  const [show, setShow] = useState(false);
+  const changeBar = () => {
+    setShow(!show);
+  };
   return (
     <div className="header">
-      <div className="header-inner">
+      <div style={{ display: "flex" }}>
+        <img
+          className="ham"
+          onClick={changeBar}
+          src="/images/ham.svg"
+          alt="ham"
+        />
         <Link to="/">
-          <div className="nav-item">Logo</div>
+          <div>
+            <img src="/images/logo.jpg" alt="logo" style={{ width: "100px" }} />
+          </div>
         </Link>
+      </div>
+
+      <div
+        className={
+          show === true ? "header-inner animation1" : "header-inner animation2"
+        }
+      >
         <NavLink
           to="/"
           className={(navData) => (navData.isActive ? "active" : "normal")}
