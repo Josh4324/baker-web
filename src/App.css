@@ -262,3 +262,9 @@ a.normal {
     font-size: 40px;
   }
 }
+
+@media only screen and (max-device-width: 400px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
