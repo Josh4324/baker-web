@@ -247,6 +247,10 @@ a.normal {
   .footer3 {
     margin-bottom: 20px;
   }
+
+  .parallax {
+    background-attachment: scroll;
+  }
 }
 
 @media (max-width: 300px) {
