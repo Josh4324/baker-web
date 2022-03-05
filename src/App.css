@@ -247,10 +247,6 @@ a.normal {
   .footer3 {
     margin-bottom: 20px;
   }
-
-  .parallax {
-    background-attachment: scroll;
-  }
 }
 
 @media (max-width: 300px) {
@@ -265,6 +261,6 @@ a.normal {
 
 @media only screen and (max-device-width: 400px) {
   .parallax {
-    background-attachment: scroll;
+    background-attachment: inherit;
   }
 }
