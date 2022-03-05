@@ -229,3 +229,32 @@ a.normal {
     transition: transform 1.5s;
   }
 }
+
+@media (max-width: 400px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer1 {
+    margin-bottom: 20px;
+  }
+
+  .footer2 {
+    margin-bottom: 20px;
+  }
+
+  .footer3 {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 300px) {
+  .box1 {
+    width: 300px;
+  }
+
+  .baker {
+    font-size: 40px;
+  }
+}
